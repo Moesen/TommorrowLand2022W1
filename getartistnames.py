@@ -18,5 +18,5 @@ if __name__ == "__main__":
                 name = con.text.replace("\n", "").lstrip().rstrip()
                 artists.append(name)
 
-    with open("artists.json", "w") as f:
+    with open("data/artists.json", "w") as f:
         f.write(json.dumps(artists, indent=2))
